@@ -1,0 +1,12 @@
+{
+  "name": "My Linux Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "postCreateCommand": "sudo apt update && sudo apt install -y make gcc git",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.go"
+  ]
+}
