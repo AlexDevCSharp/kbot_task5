@@ -8,7 +8,7 @@ TARGETARCH ?= amd64
 PLATFORM ?= ${TARGETOS}/${TARGETARCH}
 IMAGE_TAG := ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
 
-PLATFORMS := linux/amd64 linux/arm64
+PLATFORMS := linux/amd64,linux/arm64
 
 .PHONY: all format get lint test build build-linux build-arm build-windows \
         linux arm docker-build docker-push docker-test clean
